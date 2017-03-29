@@ -20,7 +20,17 @@ request.onreadystatechange= function () {
     
 }
 };
+var sunSize = 30;
 
+draw = function() {
+    // The sun
+    fill(255, 204, 0);
+    ellipse(200, 298, sunSize, sunSize);
+
+    // The land
+    fill(76, 168, 67);
+    rect(0, 300, 400, 100);
+};
 //make a request
 request.open('GET','http://http://deepu5g.imad.hasura-app.io/counter', true);
 request.send(null);
