@@ -49,7 +49,4 @@ app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
 
-// Do not edit the code under this line
-console.log("Name: " + myString);
-console.log("Lucky Number: " + myNumber);
-console.log("Good joke? " + myBoolean);
+
