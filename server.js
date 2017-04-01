@@ -48,10 +48,6 @@ var port = 8080; // Use 8080 for local development because you might already hav
 app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
-var myString = deepak;
-var myNumber = 25;
-var myBoolean = gautam;
-
 
 // Do not edit the code under this line
 console.log("Name: " + myString);
