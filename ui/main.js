@@ -26,7 +26,14 @@ function renderTime(){
      var year = mydate.getYear();
      if (year < 1000){
      year+=1990;
-     } }   
+     }
+var day = mydate.getDay();
+var month = mydate.getMonth();
+var daym = mydate.getDate();
+var dayarray = new Array("sunday","monday","tuesday","wednwesday","thursday","friday","saturday"); 
+var montharray = new Array("january","february","march","april","may","june","july","august","septmber","october","november","december");
+    
+}   
 //make a request
 request.open('GET','http://http://deepu5g.imad.hasura-app.io/counter', true);
 request.send(null);
