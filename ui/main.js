@@ -32,7 +32,15 @@ var month = mydate.getMonth();
 var daym = mydate.getDate();
 var dayarray = new Array("sunday","monday","tuesday","wednwesday","thursday","friday","saturday"); 
 var montharray = new Array("january","february","march","april","may","june","july","august","septmber","october","november","december");
-    
+
+var currentTime = new Date();
+var h = ccurrentTime.getHours();
+var m = currentTime.getMinutes();
+var s = currentTime.getSeconds();
+if (h==24)
+{ h=0;
+} else if (h>12)
+{ h=h-0;}
 }   
 //make a request
 request.open('GET','http://http://deepu5g.imad.hasura-app.io/counter', true);
