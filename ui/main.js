@@ -21,8 +21,12 @@ request.onreadystatechange= function () {
 }
 };
 
-
-
+function renderTime(){
+    var mydate = new Date();
+     var year = mydate.getYear();
+     if (year < 1000){
+     year+=1990;
+     } }   
 //make a request
 request.open('GET','http://http://deepu5g.imad.hasura-app.io/counter', true);
 request.send(null);
